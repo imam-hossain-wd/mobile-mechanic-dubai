@@ -9,7 +9,8 @@ export const metadata = {
     canonical: `${SiteConfig.url}/`,
   },
   verification: {
-    // google: "1oV77FBCm-ZXwgNwZ-iQuPKc-aS9l3GaT1X2kKzsZww"
+    google: "uk4mIfwe9O8aum9wdHCikzKAEoUSNQbJCMrF7LY_ofw"
+    // google-site-verification=uk4mIfwe9O8aum9wdHCikzKAEoUSNQbJCMrF7LY_ofw
   },
   icons: {
     icon: "/favicon.ico",

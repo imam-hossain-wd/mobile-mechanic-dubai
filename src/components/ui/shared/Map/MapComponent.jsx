@@ -99,13 +99,16 @@ import React from 'react';
 import { MapPin, Phone, Mail, ChevronRight, MessageSquareText, Navigation, Clock, Shield, Star } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { SiteConfig } from '@/config/site';
 
 const MapComponent = () => {
   // Coordinates for 24 Car Service Dubai
   const latitude = 25.2430387;
   const longitude = 55.2964023;
-  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.818319831845!2d55.29382737437848!3d25.243043529844122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x618e2df114dbe2ed%3A0xbbb3ac95640ff0da!2sSaiful%20Car%20Repair%20%26%20Battery%20Fixing%20Dubai!5e0!3m2!1sen!2sbd!4v1769782114563!5m2!1sen!2sbd";
-  const directionUrl = "https://www.google.com/maps/dir/Saiful+Car+Repair+%26+Battery+Fixing+Dubai,+Al+Mankhool+-+Dubai+-+United+Arab+Emirates/@25.2430387,55.2964023,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x618e2df114dbe2ed:0xbbb3ac95640ff0da!2m2!1d55.2964023!2d25.2430387?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D";
+  const mapUrl = "https://www.google.com/maps/place/Car+Repair+Mobile+Mechanic+Dubai/@25.2125484,55.2779404,17z/data=!4m10!1m2!2m1!1scar+repair+mobile+mechanic+dubai!3m6!1s0x3e5f431da32fe9ad:0x7dfd6dd1bfe00ba0!8m2!3d25.2125484!4d55.2779404!15sCiBjYXIgcmVwYWlyIG1vYmlsZSBtZWNoYW5pYyBkdWJhaVoiIiBjYXIgcmVwYWlyIG1vYmlsZSBtZWNoYW5pYyBkdWJhaZIBCmNhcl9yZXBhaXLgAQA!16s%2Fg%2F11z428qs54?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D";
+  // const mapUrl = "https://maps.app.goo.gl/YiYcGf1DzsqhSr9c7";
+
+  const directionUrl = "https://www.google.com/maps/dir//Car+Repair+Mobile+Mechanic+Dubai+-+99+Sheikh+Zayed+Rd+-+Trade+Center+Second+-+Trade+Center+-+Dubai+-+United+Arab+Emirates/@25.1353945,55.1085631,11z/data=!4m17!1m8!3m7!1s0x3e5f431da32fe9ad:0x7dfd6dd1bfe00ba0!2sCar+Repair+Mobile+Mechanic+Dubai!8m2!3d25.2125484!4d55.2779404!15sCiBjYXIgcmVwYWlyIG1vYmlsZSBtZWNoYW5pYyBkdWJhaVoiIiBjYXIgcmVwYWlyIG1vYmlsZSBtZWNoYW5pYyBkdWJhaZIBCmNhcl9yZXBhaXLgAQA!16s%2Fg%2F11z428qs54!4m7!1m0!1m5!1m1!1s0x3e5f431da32fe9ad:0x7dfd6dd1bfe00ba0!2m2!1d55.2779404!2d25.2125484?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D";
 
   return (
     <div className="w-full max-w-7xl mx-auto bg-white">
@@ -121,7 +124,7 @@ const MapComponent = () => {
         <h2 className="text-2xl md:text-3xl font-light text-gray-900 mt-4">
           Located in the Heart of
           <span className="block font-medium bg-gradient-to-r from-[#007A55] to-[#00943B] bg-clip-text text-transparent">
-            Al Mankhool, Dubai
+            {SiteConfig?.location}
           </span>
         </h2>
       </div>
@@ -177,11 +180,11 @@ const MapComponent = () => {
                   Workshop Location
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  24 Car Service Dubai<br />
-                  Al Mankhool, Bur Dubai<br />
+                  Car Repair Mobile Mechanic Dubai<br />
+                  99 Sheikh Zayed Rd -Trade Center<br />
                   Dubai - United Arab Emirates
                 </p>
-                <Link 
+                <Link
                   href={directionUrl}
                   target="_blank"
                   className="inline-flex items-center gap-1 mt-3 text-xs text-[#007A55] hover:text-[#00943B]"
@@ -216,7 +219,7 @@ const MapComponent = () => {
                 Hours
               </h3>
             </div>
-            
+
             <div className="space-y-2">
               {[
                 { day: "Saturday - Thursday", hours: "8:00 AM - 10:00 PM" },
@@ -249,21 +252,21 @@ const MapComponent = () => {
             </div>
 
             <div className="space-y-3">
-              <Link 
-                href="tel:+971545695980"
+              <Link
+                href={SiteConfig?.numberCallLink}
                 className="flex items-center gap-3 group"
               >
                 <div className="w-8 h-8 bg-gray-50 flex items-center justify-center group-hover:bg-[#007A55]/10 transition-colors">
                   <Phone className="h-4 w-4 text-gray-500 group-hover:text-[#007A55]" />
                 </div>
                 <div>
-                  <span className="text-sm text-gray-900 group-hover:text-[#007A55]">+971 54 569 5980</span>
+                  <span className="text-sm text-gray-900 group-hover:text-[#007A55]">{SiteConfig?.displayNumber}</span>
                   <span className="block text-xs text-gray-400">24/7 Hotline</span>
                 </div>
               </Link>
 
-              <Link 
-                href="https://wa.me/971545695980"
+              <Link
+                href={SiteConfig?.whatsappCallLink}
                 className="flex items-center gap-3 group"
               >
                 <div className="w-8 h-8 bg-gray-50 flex items-center justify-center group-hover:bg-[#007A55]/10 transition-colors">
@@ -275,8 +278,8 @@ const MapComponent = () => {
                 </div>
               </Link>
 
-              <Link 
-                href="mailto:24carservicedubai@gmail.com"
+              <Link
+                href={`mailto:${SiteConfig?.email}`}
                 className="flex items-center gap-3 group"
               >
                 <div className="w-8 h-8 bg-gray-50 flex items-center justify-center group-hover:bg-[#007A55]/10 transition-colors">
@@ -284,7 +287,7 @@ const MapComponent = () => {
                 </div>
                 <div>
                   <span className="text-sm text-gray-900 group-hover:text-[#007A55]">Email Us</span>
-                  <span className="block text-xs text-gray-400">24carservicedubai@gmail.com</span>
+                  <span className="block text-xs text-gray-400">{SiteConfig?.email}</span>
                 </div>
               </Link>
             </div>

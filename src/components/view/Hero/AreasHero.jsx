@@ -4,15 +4,14 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { hero, images } from "@/utils/assets";
 
-const areaHero = images.areas
 export default function AreasHero() {
     return (
         <section className="relative h-[50vh] md:h-[50vh] min-h-[400px] w-full overflow-hidden">
-            {/* Background Image - Same as contact/blog page */}
+            {/* Background Image */}
              <div className="absolute inset-0">
                       <Image
                         src={hero.ServiceAreaHero}
-                        alt="Car Service Background"
+                        alt="Mobile Mechanic Dubai Service Areas"
                         fill
                         className="object-cover object-center scale-110"
                         priority
@@ -27,18 +26,20 @@ export default function AreasHero() {
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-4 w-fit">
                         <MapPin className="h-4 w-4 text-emerald-400" />
-                        <span className="text-sm font-medium text-white">Coverage Across Dubai</span>
+                        <span className="text-sm font-medium text-white">Rapid On-Site Coverage in Dubai</span>
                     </div>
 
-                    {/* Heading */}
+                    {/* Heading - Updated for Brand Consistency */}
                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3">
-                        Mobile Car Repair {" "}
+                        Mobile Mechanic {" "}
                         <span ><span className="text-emerald-400">Service Areas</span> in Dubai</span>
                     </h1>
 
-                    {/* Description */}
+                    {/* Description - Updated for Specific Brand Services */}
                     <p className="text-base text-white/80 mb-5 max-w-xl leading-relaxed">
-                      24 Car Service Dubai offers professional mobile car repair and mechanic services across multiple areas in Dubai. Our expert technicians provide fast onsite diagnostics, battery replacement, oil change, brake repair, and emergency roadside assistance wherever you are in Dubai.
+                      Car Repair Mobile Mechanic Dubai provides 24/7 expert roadside assistance across the city. 
+                      From battery replacements in Dubai Marina to AC repairs in Deira, our certified mechanics 
+                      bring professional garage services directly to your doorstep or location.
                     </p>
 
                     {/* Stats - Coverage metrics */}
@@ -48,8 +49,8 @@ export default function AreasHero() {
                                 <Navigation className="h-4 w-4 text-emerald-400" />
                             </div>
                             <div>
-                                <span className="text-sm font-bold text-white">25+</span>
-                                <span className="text-xs text-white/60 ml-1">Areas</span>
+                                <span className="text-sm font-bold text-white">Dubai Wide</span>
+                                <span className="text-xs text-white/60 ml-1">Coverage</span>
                             </div>
                         </div>
 
@@ -60,8 +61,8 @@ export default function AreasHero() {
                                 <Clock className="h-4 w-4 text-emerald-400" />
                             </div>
                             <div>
-                                <span className="text-sm font-bold text-white">30 min</span>
-                                <span className="text-xs text-white/60 ml-1">Response</span>
+                                <span className="text-sm font-bold text-white">24/7</span>
+                                <span className="text-xs text-white/60 ml-1">Availability</span>
                             </div>
                         </div>
 
@@ -69,28 +70,14 @@ export default function AreasHero() {
 
                         <div className="flex items-center gap-2">
                             <div className="p-1.5 bg-emerald-500/20 rounded-lg">
-                                <Users className="h-4 w-4 text-emerald-400" />
+                                <Star className="h-4 w-4 text-emerald-400" />
                             </div>
                             <div>
-                                <span className="text-sm font-bold text-white">5000+</span>
-                                <span className="text-xs text-white/60 ml-1">Customers</span>
+                                <span className="text-sm font-bold text-white">4.9/5</span>
+                                <span className="text-xs text-white/60 ml-1">Rating</span>
                             </div>
                         </div>
                     </div>
-
-                    {/* CTA Button */}
-                    {/* <div className="flex flex-wrap gap-3">
-                        <Button className="px-6 py-3 bg-emerald-500 text-white hover:bg-emerald-600 text-sm font-medium rounded-xl shadow-lg hover:shadow-xl transition-all">
-                            <Phone className="w-4 h-4 mr-2" /> Call Now for Instant Help
-                        </Button>
-
-                        <Button
-                            variant="outline"
-                            className="px-6 py-3 bg-transparent border-white/20 text-white hover:bg-white/10 hover:border-white/30 text-sm font-medium rounded-xl transition-all"
-                        >
-                            <MapPin className="w-4 h-4 mr-2" /> View Service Areas
-                        </Button>
-                    </div> */}
                 </div>
             </div>
         </section>

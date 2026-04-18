@@ -213,13 +213,15 @@ export const SiteConfig = {
   authorName: "Md Saiful Islam",
   brandName: "Car Repair Mobile Mechanic Dubai",
   url: "https://mobilemechanicdubai.com",
-  email: "24carservicedxb@gmail.com",
+  email: "mobilemechancidxb@gmail.com",
   description: "Your Car Care Partner Dubai - Anytime Anywhere when you need Car Repair and Maintenance Service",
   displayNumber: "+971 55 233 0721",
   numberCallLink: "tel:+971552330721",
   whatsappCallLink: "https://wa.me/971552330721",
-  location: "99 Sheikh Zayed Rd - Trade Center Second - Trade Center - Dubai - United Arab Emirates",
-  coordinate: "25.21254840, 55.27794040",
+  location: "99 Sheikh Zayed Rd - Trade Center ",
+  city: "Dubai",
+  country: "UAE",
+  coordinate: "25.2125484, 55.2779404",
 
   // Updated Google Business Profile Information
   gbp: {
@@ -264,8 +266,7 @@ export const SiteConfig = {
     { day: "Thursday", hours: "24 Hours" },
     { day: "Friday", hours: "24 Hours" },
   ],
-  city: "Dubai",
-  country: "UAE",
+
   services: [
     { name: "Car Battery Replacement Dubai", slug: "/services/car-battery-replacement-dubai" },
     { name: "Car Jump Start Service Dubai", slug: "/services/car-jump-start-service-dubai" },

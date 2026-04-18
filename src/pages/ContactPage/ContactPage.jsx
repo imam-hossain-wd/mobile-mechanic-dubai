@@ -29,10 +29,10 @@ export default function ContactPage() {
                 <span className="text-sm font-semibold text-[#007A55]">OUR LOCATION</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Visit Our <span className="text-[#007A55]">Service Center</span> in Al Mankhool
+                Visit Our <span className="text-[#007A55]">Service Center</span> in 99 Sheikh Zayed Rd - Trade Center
               </h2>
               <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-                Proudly serving customers across Dubai including Al Mankhool, Deira, Jumeirah, 
+                Proudly serving customers across Dubai including Trade Center, Deira, Jumeirah, 
                 Dubai Marina, Downtown Dubai, and nearby areas.
               </p>
             </div>

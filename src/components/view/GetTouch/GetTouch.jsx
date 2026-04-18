@@ -171,7 +171,6 @@ import { Button } from "@/components/ui/button";
 import { cn } from '@/lib/utils';
 import { SiteConfig } from '@/config/site';
 
-
 export default function GetTouch() {
   return (
     <section className="relative py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
@@ -215,7 +214,7 @@ export default function GetTouch() {
             </span>
           </h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-4 tracking-wide">
-            Our expert team is available 24/7 for immediate assistance and personalized solutions
+            Our expert team is available 24/7 for immediate assistance and professional car repair services across Dubai.
           </p>
         </div>
 
@@ -233,23 +232,23 @@ export default function GetTouch() {
               {[
                 {
                   icon: MapPin,
-                  title: "Visit Our Workshop",
-                  lines: ["Al Mankhool, Bur Dubai", "Dubai - United Arab Emirates"],
-                  extra: "Mobile service across all Dubai areas",
+                  title: "Visit Our Location",
+                  lines: ["99 Sheikh Zayed Rd - Trade Center", "Dubai - United Arab Emirates"],
+                  extra: "On-site and mobile service available",
                   color: "#007A55"
                 },
                 {
                   icon: Mail,
                   title: "Email Us",
-                  lines: ["24carservicedubai@gmail.com"],
+                  lines: ["mobilemechancidxb@gmail.com"],
                   extra: "Typically respond within 1 hour",
                   color: "#00943B"
                 },
                 {
                   icon: Phone,
                   title: "Call Us 24/7",
-                  lines: ["+971 54 569 5980"],
-                  extra: "Emergency support available",
+                  lines: ["+971 55 233 0721"],
+                  extra: "Emergency roadside support",
                   color: "#007A55"
                 }
               ].map((item, idx) => (
@@ -287,8 +286,8 @@ export default function GetTouch() {
 
               <div className="space-y-2">
                 {[
-                  { day: "Saturday - Thursday", hours: "8:00 AM - 10:00 PM" },
-                  { day: "Friday", hours: "2:00 PM - 10:00 PM" },
+                  { day: "Saturday - Friday", hours: "Open 24 Hours" },
+                  { day: "Service Area", hours: "All Over Dubai" },
                   { day: "Emergency", hours: "24/7 Available", highlight: true }
                 ].map((schedule, idx) => (
                   <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
@@ -312,8 +311,8 @@ export default function GetTouch() {
             {/* Trust Indicators */}
             <div className="flex flex-wrap items-center gap-6 pt-4">
               {[
-                { icon: Shield, text: "RTA Approved" },
-                { icon: Star, text: "4.9 ★ Rating" },
+                { icon: Shield, text: "Professional Service" },
+                { icon: Star, text: "Top Rated Mechanic" },
                 { icon: MessageCircle, text: "24/7 Support" }
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2">
@@ -362,7 +361,7 @@ export default function GetTouch() {
                     <input
                       type="tel"
                       className="w-full border border-gray-200 bg-gray-50 px-4 py-3 text-sm focus:outline-none focus:border-[#007A55] transition-colors"
-                      placeholder="+971 XX XXX XXXX"
+                      placeholder="+971 55 233 0721"
                     />
                   </div>
                 </div>
@@ -385,10 +384,10 @@ export default function GetTouch() {
                   <select className="w-full border border-gray-200 bg-gray-50 px-4 py-3 text-sm focus:outline-none focus:border-[#007A55] transition-colors">
                     <option>Select a service</option>
                     <option>Battery Replacement</option>
-                    <option>AC Repair</option>
+                    <option>AC Repair & Cooling</option>
                     <option>Engine Diagnostics</option>
-                    <option>Emergency Roadside</option>
-                    <option>General Maintenance</option>
+                    <option>Brake & Suspension</option>
+                    <option>Emergency Jump Start</option>
                   </select>
                 </div>
 
@@ -425,7 +424,7 @@ export default function GetTouch() {
                 {/* Action Buttons */}
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   <a
-                    href="https://wa.me/971545695980"
+                    href="https://wa.me/971552330721"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 py-3 bg-[#25D366]/10 border border-[#25D366]/30 text-xs font-medium text-gray-700 hover:bg-[#25D366]/20 transition-colors"
@@ -457,12 +456,12 @@ export default function GetTouch() {
           <div className="flex flex-wrap justify-between items-center gap-4">
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 text-[#007A55]" />
-              <span className="text-xs text-gray-500">Book your appointment online</span>
+              <span className="text-xs text-gray-500">Professional Mobile Mechanic Dubai</span>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-xs text-gray-400">24/7 Emergency:</span>
-              <a href="tel:+971545695980" className="text-sm font-medium text-[#007A55] hover:text-[#00943B]">
-                +971 54 569 5980
+              <span className="text-xs text-gray-400">24/7 Hotline:</span>
+              <a href="tel:+971552330721" className="text-sm font-medium text-[#007A55] hover:text-[#00943B]">
+                +971 55 233 0721
               </a>
             </div>
           </div>

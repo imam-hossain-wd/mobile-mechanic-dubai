@@ -4,12 +4,16 @@
 import React from 'react';
 import { MapPin, Phone, Mail, ChevronRight, MessageSquareText, Clock, Star } from 'lucide-react';
 import Link from 'next/link';
+import { SiteConfig } from '@/config/site';
 
 const MapComponent = () => {
   // Coordinates for Saiful Car Repair & Battery Fixing Dubai
   const latitude = 25.2430387;
   const longitude = 55.2964023;
-  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.818319831845!2d55.29382737437848!3d25.243043529844122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x618e2df114dbe2ed%3A0xbbb3ac95640ff0da!2sSaiful%20Car%20Repair%20%26%20Battery%20Fixing%20Dubai!5e0!3m2!1sen!2sbd!4v1769782114563!5m2!1sen!2sbd";
+  const mapUrl = "https://www.google.com/maps/place/Car+Repair+Mobile+Mechanic+Dubai/@25.1353945,55.1085631,11z/data=!4m10!1m2!2m1!1scar+repair+mobile+mechanic+dubai!3m6!1s0x3e5f431da32fe9ad:0x7dfd6dd1bfe00ba0!8m2!3d25.2125484!4d552779404!15sCiBjYXIgcmVwYWlyIG1vYmlsZSBtZWNoYW5pYyBkdWJhaVoiIiBjYXIgcmVwYWlyIG1vYmlsZSBtZWNoYW5pYyBkdWJhaZIBCmNhcl9yZXBhaXLgAQA!16s%2Fg%2F11z428qs54?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D";
+
+
+
   const directionUrl = "https://www.google.com/maps/dir/Saiful+Car+Repair+%26+Battery+Fixing+Dubai,+Al+Mankhool+-+Dubai+-+United+Arab+Emirates/@25.2430387,55.2964023,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x618e2df114dbe2ed:0xbbb3ac95640ff0da!2m2!1d55.2964023!2d25.2430387?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
 
   return (
@@ -67,7 +71,7 @@ const MapComponent = () => {
       {/* Quick Action Buttons */}
       <div className="grid grid-cols-4 gap-2 px-4 mb-3 bg-white">
         <Link
-          href="tel:+971545695980"
+          href={SiteConfig?.numberCallLink}
           className="flex flex-col items-center justify-center gap-1 p-3 bg-white border border-gray-200 hover:border-[#007A55] rounded-xl transition-all hover:shadow-md"
         >
           <div className="p-2 bg-[#007A55]/10 rounded-full">
@@ -77,7 +81,7 @@ const MapComponent = () => {
         </Link>
 
         <Link
-          href="https://wa.me/971545695980"
+          href={SiteConfig?.whatsappCallLink}
           className="flex flex-col items-center justify-center gap-1 p-3 bg-white border border-gray-200 hover:border-[#007A55] rounded-xl transition-all hover:shadow-md"
         >
           <div className="p-2 bg-[#007A55]/10 rounded-full">

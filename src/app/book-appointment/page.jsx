@@ -6,10 +6,10 @@ import React from 'react'
 
 
 export const metadata = {
-  title: "Book Car Repair Appointment Dubai | Mobile Mechanic 24/7",
-  description: "Book your mobile car repair appointment with 24 Car Service Dubai Mobile Mechanic. Fast battery replacement, jump start, AC repair and roadside assistance available 24/7.",
+  title: "Book Car Repair Dubai | 24/7 Mechanic",
+  description: "Book your car repair service in Dubai with our 24/7 mobile mechanic. Fast response, onsite repair, and expert service. Schedule now.",
   alternates: {
-    canonical: `${SiteConfig.url}/book-appointment`,
+    canonical: `${SiteConfig.url}/appointment`,
   },
 };
 const items = [

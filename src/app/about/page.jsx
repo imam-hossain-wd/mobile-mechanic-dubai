@@ -5,8 +5,8 @@ import BreadcrumbSchema from '@/seo/schemas/BreadcrumbSchema';
 import React from 'react'
 
 export const metadata = {
-  title: "About 24 Car Service Dubai | Mobile Mechanic & Auto Repair",
-  description: "Learn about 24 Car Service Dubai Mobile Mechanic, a trusted provider of 24/7 mobile car repair and roadside assistance in Dubai. Our experienced technicians deliver fast, reliable and professional auto repair services.",
+  title: "About Us | Expert Mobile Mechanic Dubai",
+  description: "Learn about our expert mobile mechanics in Dubai. 24/7 service, trusted by 500+ customers for fast and reliable car repair solutions.",
   alternates: {
     canonical: `${SiteConfig.url}/about`,
   },

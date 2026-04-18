@@ -9,8 +9,8 @@ import BreadcrumbSchema from "@/seo/schemas/BreadcrumbSchema";
 import ServiceAreaPage from "@/pages/ServiceArea/ServiceAreaPage";
 
 export const metadata = {
-  title: "Mobile Car Repair Service Areas in Dubai | 24 Car Service",
-  description: "24 Car Service Dubai Mobile Mechanic provides fast 24/7 mobile car repair across Dubai including Deira, Dubai Marina, Downtown, Jumeirah, Zabeel, Al Mankhool, Al Raffa and nearby areas.",
+  title: "Car Repair Areas Dubai | Mobile Mechanic",
+  description: "We provide mobile car repair services across Dubai including DIFC, Business Bay, and more. Fast onsite mechanic wherever you are.",
   alternates: {
     canonical: `${SiteConfig.url}/area-we-serve`,
   },

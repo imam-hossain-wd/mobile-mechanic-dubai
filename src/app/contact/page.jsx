@@ -5,8 +5,8 @@ import BreadcrumbSchema from "@/seo/schemas/BreadcrumbSchema";
 
 
 export const metadata = {
-  title: "Contact 24 Car Service Dubai | Mobile Mechanic & Roadside Help",
-  description: "Contact 24 Car Service Dubai Mobile Mechanic for fast car repair, battery replacement, jump start and roadside assistance. Available 24/7 anywhere in Dubai.",
+  title: "Contact Mobile Mechanic Dubai | Call 24/7",
+  description: "Contact our 24/7 mobile mechanic in Dubai for fast car repair and roadside assistance. Call or WhatsApp now for immediate help.",
   alternates: {
     canonical: `${SiteConfig.url}/contact`,
   },

@@ -7,13 +7,12 @@ import ServicesPageSchema from '@/seo/schemas/ServicesPageSchema';
 import React from 'react'
 
 export const metadata = {
-  title: "Expert Car Repair & Mobile Mechanic Services Dubai",
-  description: "Explore professional car repair services in Dubai including battery replacement, jump start, car AC repair, alternator repair, diagnostics and full vehicle maintenance by 24 Car Service Dubai Mobile Mechanic.",
+  title: "Car Services Dubai | 24/7 Mobile Mechanic",
+  description: "Explore our car repair services in Dubai including AC repair, battery replacement, and emergency roadside help. Book fast mobile service now.",
   alternates: {
     canonical: `${SiteConfig.url}/services`,
   },
 };
-
 const items = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" }
